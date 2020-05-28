@@ -1,5 +1,3 @@
-#materialize-basic
-
 .icon-block {
   padding: 0 15px;
 }
@@ -7,9 +5,14 @@
 	font-size: inherit;
 }
 
+nav,
+nav i.material-icons,
+.sidenav-trigger,
+.sidenav-trigger i {
+  height: 100px;
+  line-height: 100px;
+}
 
-#navbar
-
-.logofont {
-   font-size: 16;
+.footer-anchor a {
+    color: #ffffff;
 }

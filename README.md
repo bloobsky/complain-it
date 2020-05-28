@@ -4,7 +4,10 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
-
+->0.0.5 -- Added Logos (.jpg & .png )
+->0.0.4 -- CSS file added
+->0.0.3 -- .js files from materialize added
+->0.0.2 -- Index.html added
 ->0.0.1 -- Initial Commit with README.md file
 
 Project Info

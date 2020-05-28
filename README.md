@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.6 -- File index.html upgrade
 ->0.0.5 -- Added Logos (.jpg & .png )
 ->0.0.4 -- CSS file added
 ->0.0.3 -- .js files from materialize added
@@ -22,7 +23,6 @@ As a homeowner, I want to look for a jobs done by tradesman in order to proceed 
 Testing
 Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8). Website was also tested using Inspect function in Google Chrome
 HTML and CSS Validator were also used in place.
-
 
 
 Deployement

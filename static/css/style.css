@@ -1,3 +1,6 @@
+/* Overriding
+materialize.css to achieve
+desired results  */
 .icon-block {
   padding: 0 15px;
 }
@@ -13,6 +16,7 @@ nav i.material-icons,
   line-height: 100px;
 }
 
+/*  footer */ 
 .footer-anchor a {
     color: #ffffff;
 }

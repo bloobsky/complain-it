@@ -1,39 +1,67 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+#######################################################
 
-Welcome bloobsky,
+Version Control
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+This Project uses Semantic Versioning (https://semver.org/)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+->0.0.1 -- Initial Commit with README.md file
 
-`python3 -m http.server`
+Project Info
 
-A blue button should appear to click: *Make Public*,
+Complain It is a fully functional web apllication that allows user to add information about recent job done by a trademan in order to approve or complain it so other user can take advantage of their experience and may decide whetever to do with their house project.
 
-Another blue button should appear to click: *Open Browser*.
+UX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a homeowner, I want to look for a jobs done by tradesman in order to proceed with mine.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+Testing
+Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8). Website was also tested using Inspect function in Google Chrome
+HTML and CSS Validator were also used in place.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+Deployement
+Using Git Command Line to upload to a repository
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Type in terminal these commands:
+git init to initialize a new repository
+git add README.md to add README.md file to repository
+git commit -m "Initial commit" to add a message for first commitement.
+git remote add origin https://github.com/bloobsky/your_repository_name.git to assign repository
+git push -u origin master to upload files to the repository
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Project is deployed @ GitHub.
+Github was used in deployement process as it is integrated, simple and ther is no need to use additional services.
+It also containt Version Control and everything is uploaded using terminal commands (git)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+How it is done ?
 
---------
+Open www.github.com.
+Login with your credentials
+On the Navigation Bar in the repository you would like to deploy look for 'settings' link.
+Scroll down the page and look for 'GitHub Pages'
+Under the source section select 'master branch' option
+Message should appear 'Your site is ready to be published at https://$YourLogin.github.io/$RepositoryName/
+Your website is deployed now.
 
-Happy coding!
+Technologies,Programming Languages and APIs
+HTML5, CSS, Materialize, JavaScript, jQuery, Python, Flask, MongoDB, GoogleFonts
+API: emailJS, reCaptcha and Google Maps API
+
+Features to be implemented
+
+
+Media
+
+Swatch used for website is available at /img/swatch.png
+ComplainIt logo was created in Adobe Illustrator.
+
+Acknowledgements
+
+I received inspiration from CodeInstitute (www.codeinstitute.net)
+Privacy Policy was generated using www.iubenda.com
+Coolors.co - website was used to generate colour scheme.
+Gitpod was used to entirely written all the code for the proposed project.

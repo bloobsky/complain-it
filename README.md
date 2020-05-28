@@ -3,7 +3,7 @@
 Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
-
+->0.0.7 -- Added file app.py
 ->0.0.6 -- File index.html upgrade
 ->0.0.5 -- Added Logos (.jpg & .png )
 ->0.0.4 -- CSS file added

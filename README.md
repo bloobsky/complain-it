@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.18 -- File directions.html filled with information & map.js uploaded
 ->0.0.17 -- Added ability of dynamic Title Pages in App.py
 ->0.0.16 -- * .html files prepared for Flask
 ->0.0.15 -- Fixed bug [missing brackets ]in App.py 

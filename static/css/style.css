@@ -20,3 +20,10 @@ nav i.material-icons,
 .footer-anchor a {
     color: #ffffff;
 }
+
+/* map placement */
+
+#map {
+    padding-top: 400px;
+    min-height: 460px;
+}

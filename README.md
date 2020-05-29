@@ -3,6 +3,8 @@
 Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
+
+->0.0.12 -- App.py & Index.html prepared for Flask
 ->0.0.11 -- Changed directory structure in order to work for Flask
 ->0.0.10 -- app.py file expanded and also it hides passwords from the public
 ->0.0.9 -- Added Procfile for Heroku development

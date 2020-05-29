@@ -18,23 +18,25 @@
   <div class="navbar-fixed">
   <nav class="lime">
   <div class="nav-wrapper container">
-    <a href="#!" class="brand-logo right"><img src="{{url_for('static', filename='img/Logo.png')}}" alt="logo"></a>
+    <a href="{{url_for('index')}}" class="brand-logo right"><img src="{{url_for('static', filename='img/Logo.png')}}" alt="logo"></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
     <ul class="left hide-on-med-and-down">
-      <li><a href="#">How it works ?</a></li>
-          <li><a href="#">Search for complained job</a></li>
-          <li><a href="#">Complain a job</a></li>
-          <li><a href="#">FAQ</a></li>
+    <li><a href="{{url_for('index')}}">Home</a></li>
+      <li><a href="{{url_for('works')}}">How it works ?</a></li>
+          <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
+          <li><a href="{{url_for('complain')}}">Complain a job</a></li>
+          <li><a href="{{url_for('faq')}}">FAQ</a></li>
   </div>
 </nav>
 </div>
   
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="#">How it works ?</a></li>
-          <li><a href="#">Search for complained job</a></li>
-          <li><a href="#">Complain a job</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('works')}}">How it works ?</a></li>
+          <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
+          <li><a href="{{url_for('complain')}}">Complain a job</a></li>
+          <li><a href="{{url_for('faq')}}">FAQ</a></li>
   </ul>
   <!-- header -->
   <div class="section no-pad-bot" id="index-banner">
@@ -104,15 +106,15 @@
         <div class="col l2 s12">
           <h5 class="white-text">Complain It</h5>
           <ul>
-            <li><a class="white-text" href="#!">Privacy Policy</a></li>
-            <li><a class="white-text" href="#!">Contact us</a></li>
-            <li><a class="white-text" href="#!">Directions</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="{{url_for('privacy')}}">Privacy Policy</a></li>
+            <li><a class="white-text" href="{{url_for('contact')}}">Contact us</a></li>
+            <li><a class="white-text" href="{{url_for('directions')}}">Directions</a></li>
           </ul>
         </div>
 
       </div>
     </div>
+    <!-- copyright -->
     <div class="footer-copyright">
       <div class="container footer-anchor">
       Copyright 2020 by <a href="http://www.jakusz.org/" target="_blank">Mateusz Jakusz</a>
@@ -124,7 +126,7 @@
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='js/materialize.js')}}"></script>
     <script src="{{url_for('static', filename='js/init.js')}}"></script>
 

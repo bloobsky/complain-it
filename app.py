@@ -21,27 +21,27 @@ def index():
     return render_template("index.html")
 
 @app.route('/search_for')
-def search_for:
+def search_for():
     return render_template('search_for.html')
 
 @app.route('/complain')
-def complain:
+def complain():
     return render_template('complain.html')
 
 @app.route('/faq')
-def faq:
+def faq():
     return render_template('faq.html')
 
 @app.route('/privacy')
-def privacy:
+def privacy():
     return render_template('privacy.html')
 
 @app.route('/contact')
-def contact:
+def contact():
     return render_template('contact.html')
 
 @app.route('/directions')
-def directions:
+def directions():
     return render_template('directions.html')
 
 

@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.23 -- Added sendMail.js and updated contact section
 ->0.0.22 -- Added Categories into a Home Page
 ->0.0.21 -- How it works subpage added
 ->0.0.20 -- Frequently Asked Questions subpage added
@@ -37,7 +38,7 @@ As a homeowner, I want to look for a jobs done by tradesman in order to proceed 
 
 
 Testing
-Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8). Website was also tested using Inspect function in Google Chrome
+Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8+ EDGE). Website was also tested using Inspect function in Google Chrome
 HTML and CSS Validator were also used in place.
 
 

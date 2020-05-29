@@ -41,7 +41,7 @@ def faq():
 def privacy():
     return render_template('privacy.html', title="Privacy Policy")
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html', title="Contact Us")
 
@@ -49,8 +49,6 @@ def contact():
 def directions():
     return render_template('directions.html', title="Directions")
 
-
-
-
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

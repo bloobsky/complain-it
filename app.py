@@ -17,6 +17,7 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template("index.html")
 
@@ -27,6 +28,10 @@ def search_for():
 @app.route('/complain')
 def complain():
     return render_template('complain.html')
+
+@app.route('/works')
+def works():
+    return render_template('works.html')
 
 @app.route('/faq')
 def faq():

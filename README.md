@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.16 -- * .html files prepared for Flask
 ->0.0.15 -- Fixed bug [missing brackets ]in App.py 
 ->0.0.14 -- Added rest of .html files (blank)
 ->0.0.13 -- Added base.html

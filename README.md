@@ -4,6 +4,8 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.20 -- Frequently Asked Questions subpage added
+->0.0.19 -- Privacy Policy Subpage Added
 ->0.0.18 -- File directions.html filled with information & map.js uploaded
 ->0.0.17 -- Added ability of dynamic Title Pages in App.py
 ->0.0.16 -- * .html files prepared for Flask

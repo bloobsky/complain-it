@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.42 -- Photos can be uploaded now to MongoDB
 ->0.0.41 -- Complain a Job works perfectly now
 ->0.0.40 -- search_for.html available
 ->0.0.39 -- App.py preperad for handling 'Complain a Job' and files upload

@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.29 - Buttons in Categories stylised
 ->0.0.28 - Fixed Issue with Add Category
 ->0.0.27 -- Function 'Add Category' available
 ->0.0.26 -- Changed the way of displaying in Categories subpage

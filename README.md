@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.1.6 -- Removed duplicate 'viewport' in base.html
 -->0.1.5 -- Added EuroSymbol€ next to the 'value' form
 -->0.1.4 -- Fixed Issue with 'uploaded_by' not displaying properly
 -->0.1.3 -- Different Job Types Added Using inner form

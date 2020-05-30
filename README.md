@@ -4,6 +4,10 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.28 - Fixed Issue with Add Category
+->0.0.27 -- Function 'Add Category' available
+->0.0.26 -- Changed the way of displaying in Categories subpage
+->0.0.25  -- .html files for categories and App.py updated
 ->0.0.24 -- Categories Subpage Added
 ->0.0.23 -- Added sendMail.js and updated contact section
 ->0.0.22 -- Added Categories into a Home Page

@@ -66,6 +66,17 @@ def delete_cat(category_id):
     mongo.db.categories.remove({'_id': ObjectId(category_id)})
     return redirect(url_for('cat'))
 
+@app.route('/add_cat')
+def add_cat():
+    return render_template('addcat.html')
+
+@app.route('/insert_cat', methods=['POST'])
+def insert_cat():
+    categories = mongo.db.categories
+    category_doc = {'category_name': request.form.get('category_name')}
+    categories.insert_one(category_doc)
+    return redirect(url_for('cat'))
+
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

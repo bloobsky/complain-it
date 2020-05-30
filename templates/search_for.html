@@ -13,9 +13,9 @@
     <strong>Contractor name</strong> {{complain.job_name}}<br>
     <strong>Job description</strong> {{complain.job_description}}<br>
     <strong>County</strong> {{complain.county}}<br>
-    <strong>Value</strong> {{complain.value}}<br><br>
+    <strong>Value</strong> {{complain.value}} € <br><br>
     <strong>Photo</strong><br><br>
-    <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.photo_job_name}}">
+    <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.photo_job_name}}" width="640" height="380">
     
     <br><br>
     </li>

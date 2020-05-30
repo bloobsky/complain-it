@@ -4,6 +4,8 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.1.3 -- Different Job Types Added Using inner form
+-->0.1.2 -- Logo dimensions adjusted in order to present it @ smaller devices
 -->0.1.1 -- Added Value field in complain a job subpage
 -->0.1 <strong>[STABLE]</strong> -- All functionalities working now perfectly 
 

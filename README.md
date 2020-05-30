@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.38 -- Complain.html adjusted & beautified
 ->0.0.37 -- Complain.html fixed > Added JS into init.js
 ->0.0.36 -- Complain.html updated ** add_job.html added
 ->0.0.35 -- Changed init.js file

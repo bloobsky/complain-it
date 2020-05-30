@@ -90,9 +90,12 @@ def insert_cat():
 
 @app.route('/add_job', methods=['POST'])
 def add_job():
-    tasks =  mongo.db.tasks
-    tasks.insert_one(request.form.to_dict())
-    return redirect(url_for('complain'))
+    if 'file_name' in request.files:
+        file_name = request.files['file_name']
+        mongo.save_file(file_name.filename, file_name)        
+    complains = mongo.db.complains
+    complains.insert_one(request.form.to_dict())
+    return redirect(url_for('search_for'))
 
 """ Server Setup """
 

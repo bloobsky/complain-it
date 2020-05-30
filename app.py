@@ -26,7 +26,7 @@ def index():
 
 @app.route('/search_for')
 def search_for():
-    return render_template('search_for.html', title="Search for complained jobs")
+    return render_template('search_for.html', title="Search for complained jobs", complains=mongo.db.complains.find())
 
 @app.route('/complain')
 def complain():
@@ -90,12 +90,23 @@ def insert_cat():
 
 @app.route('/add_job', methods=['POST'])
 def add_job():
-    if 'file_name' in request.files:
-        file_name = request.files['file_name']
-        mongo.save_file(file_name.filename, file_name)        
+    
     complains = mongo.db.complains
-    complains.insert_one(request.form.to_dict())
+    if 'photo_name' in request.files:
+        photo_name = request.files['photo_name']
+        mongo.save_file(photo_name.filename, photo_name) 
+        mongo.db.complains.insert({'category_name': request.form.get('category_name'), 
+        'uploaded_by': request.form.get('your_name'),
+        'job_name': request.form.get('job_name'),
+        'job_description': request.form.get('job_description'),
+        'county': request.form.get('county'),
+        'photo_job_name':  photo_name.filename })     
+    
     return redirect(url_for('search_for'))
+
+@app.route('/file/<filename>')
+def file(filename):
+    return mongo.send_file(filename)
 
 """ Server Setup """
 

@@ -5,7 +5,7 @@
 <!-- content -->
 <h3>Complain a Job</h3>
 <div class="row center">
-    <form action="{{url_for('add_job') }}" method="POST"  class="col s12">
+    <form action="{{url_for('add_job') }}" method="POST"  class="col s12" enctype="multipart/form-data">
                 <div class="input-field col s12">
                     <select id="category" name="category_name">
                   <option value="" disabled selected>Choose Category</option>
@@ -36,7 +36,7 @@
             </div>
         
         <div class="input-field col s12">
-            <select name="County"> 
+            <select name="county"> 
 	<option value="" disabled selected>Select County</option> 
 	 <option value="Antrim"  >Antrim</option> 
 	 <option value="Armagh"  >Armagh</option> 
@@ -78,7 +78,7 @@
             <div class="input-field file-field col s12">
                 <div class="btn center lime darken-2">
                 <span>Upload Photo</span>
-                <input id="file_name" name="file_name" type="file">
+                <input id="photo_name" name="photo_name" type="file">
                 </div>
                 <div class="file-path-wrapper">
         <input class="file-path validate" type="text">

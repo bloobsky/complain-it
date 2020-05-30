@@ -4,6 +4,8 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.41 -- Complain a Job works perfectly now
+->0.0.40 -- search_for.html available
 ->0.0.39 -- App.py preperad for handling 'Complain a Job' and files upload
 ->0.0.38 -- Complain.html adjusted & beautified
 ->0.0.37 -- Complain.html fixed > Added JS into init.js

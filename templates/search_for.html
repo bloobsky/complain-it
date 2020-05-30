@@ -4,16 +4,21 @@
 <!-- content-->
 <div class="container">
 <div class="row center">
+<ul>
+{% for complain in complains %}
 
-{% for job in complains %}
-    <div class="col sm12">
     
     <li>
+    Uploaded by {{complain.your_name}}<br>
+    Contractor name {{complain.job_name}}<br>
+    Job description {{complain.job_description}}<br>
+    County {{complain.County}}<br>
+    <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.file_name}}">
     
-    
-
-    </div>
-
+    <br><br>
+    </li>
+    {% endfor %}
+</ul>
 </div>
 </div>
 {% endblock %}

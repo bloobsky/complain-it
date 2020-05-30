@@ -9,10 +9,11 @@
 
     
     <li>
-    Uploaded by {{complain.your_name}}<br>
-    Contractor name {{complain.job_name}}<br>
-    Job description {{complain.job_description}}<br>
-    County {{complain.County}}<br>
+    <strong>Uploaded by</strong> {{complain.your_name}}<br>
+    <strong>Contractor name</strong> {{complain.job_name}}<br>
+    <strong>Job description</strong> {{complain.job_description}}<br>
+    <strong>County</strong> {{complain.County}}<br>
+    <strong>Photo</strong>
     <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.photo_job_name}}">
     
     <br><br>

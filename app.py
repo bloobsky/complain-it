@@ -30,7 +30,8 @@ def search_for():
 
 @app.route('/complain')
 def complain():
-    return render_template('complain.html', title="Complain a job")
+    return render_template('complain.html', title="Complain a job", 
+    categories=mongo.db.categories.find())
 
 @app.route('/works')
 def works():

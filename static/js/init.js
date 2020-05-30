@@ -7,3 +7,8 @@
 
   }); 
 })(jQuery); 
+
+// form select init
+$(document).ready(function(){
+    $('select').formSelect();
+  });

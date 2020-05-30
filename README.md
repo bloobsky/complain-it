@@ -4,6 +4,10 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.37 -- Complain.html fixed > Added JS into init.js
+->0.0.36 -- Complain.html updated ** add_job.html added
+->0.0.35 -- Changed init.js file
+->0.0.34 -- Fixed indent issue in App.py
 ->0.0.33 -- Added Comments in App.py
 ->0.0.32 -- Added media-queries for Logo to be presented properly on smaller devices
 ->0.0.31 -- Buttons in Categories adjusted

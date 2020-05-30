@@ -100,6 +100,7 @@ def add_job():
         'job_name': request.form.get('job_name'),
         'job_description': request.form.get('job_description'),
         'county': request.form.get('county'),
+        'value': request.form.get('value'),
         'photo_job_name':  photo_name.filename })     
     
     return redirect(url_for('search_for'))

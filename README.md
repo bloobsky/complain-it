@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.1.1 -- Added Value field in complain a job subpage
 -->0.1 <strong>[STABLE]</strong> -- All functionalities working now perfectly 
 
 ->0.0.42 -- Photos can be uploaded now to MongoDB

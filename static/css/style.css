@@ -27,3 +27,21 @@ nav i.material-icons,
     padding-top: 400px;
     min-height: 460px;
 }
+
+/* logo */
+#glogo {
+    width: 360px;
+    height: 100px;
+}
+
+
+/* media queries */
+
+@media (max-width: 568px) {
+    #glogo {
+    width: 150px;
+    height: 75px;
+
+
+}
+}

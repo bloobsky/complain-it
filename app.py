@@ -54,6 +54,7 @@ def directions():
     return render_template('directions.html', title="Directions")
 
 """ Mongo DB pages """
+""" Categories """
 @app.route('/cat')
 def cat():
     return render_template('cat.html', title="Categories", categories=mongo.db.categories.find())
@@ -83,6 +84,14 @@ def insert_cat():
     category_doc = {'category_name': request.form.get('category_name')}
     categories.insert_one(category_doc)
     return redirect(url_for('cat'))
+
+""" Jobs """
+
+@app.route('/add_job', methods=['POST'])
+def add_job():
+    tasks =  mongo.db.tasks
+    tasks.insert_one(request.form.to_dict())
+    return redirect(url_for('complain'))
 
 """ Server Setup """
 

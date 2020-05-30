@@ -51,6 +51,21 @@ def directions():
 def cat():
     return render_template('cat.html', title="Categories", categories=mongo.db.categories.find())
 
+@app.route('/edit_cat/<category_id>')
+def edit_cat(category_id):
+    return render_template('editcat.html', category=mongo.db.categories.find_one({"_id": ObjectId(category_id)}))
+
+@app.route('/update_cat/<category_id>', methods=["POST"])
+def update_cat(category_id):
+    mongo.db.categories.update({'_id': ObjectId(category_id)},
+    {'category_name': request.form.get('category_name')})
+    return redirect(url_for('cat'))
+
+@app.route('/delete_cat/<category_id>')
+def delete_cat(category_id):
+    mongo.db.categories.remove({'_id': ObjectId(category_id)})
+    return redirect(url_for('cat'))
+
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

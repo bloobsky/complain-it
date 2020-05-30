@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+->0.0.24 -- Categories Subpage Added
 ->0.0.23 -- Added sendMail.js and updated contact section
 ->0.0.22 -- Added Categories into a Home Page
 ->0.0.21 -- How it works subpage added

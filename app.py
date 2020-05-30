@@ -4,11 +4,11 @@ from flask import Flask, render_template, url_for, redirect, request
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if path.exists("env.py"):
-  import env 
+    import env 
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'complain-it'
+app.config["MONGO_DBNAME"] = 'complain_it'
 app.config["MONGO_URI"] = os.getenv("MONGOSRC")
 
 mongo = PyMongo(app)
@@ -46,6 +46,10 @@ def contact():
 @app.route('/directions')
 def directions():
     return render_template('directions.html', title="Directions")
+
+@app.route('/cat')
+def cat():
+    return render_template('cat.html', title="Categories", categories=mongo.db.categories.find())
 
     
 if __name__ == '__main__':

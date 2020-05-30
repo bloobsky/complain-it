@@ -1,3 +1,7 @@
+""" App.py application for Complain It
+version 0.2 OpenSource 
+by Mateusz Jakusz """
+
 import os
 from os import path
 from flask import Flask, render_template, url_for, redirect, request
@@ -6,6 +10,7 @@ from bson.objectid import ObjectId
 if path.exists("env.py"):
     import env 
 
+""" Flask and MongoDb configuration """
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'complain_it'
@@ -13,6 +18,7 @@ app.config["MONGO_URI"] = os.getenv("MONGOSRC")
 
 mongo = PyMongo(app)
 
+""" Static Pages """
 @app.route('/')
 @app.route('/index')
 def index():
@@ -47,6 +53,7 @@ def contact():
 def directions():
     return render_template('directions.html', title="Directions")
 
+""" Mongo DB pages """
 @app.route('/cat')
 def cat():
     return render_template('cat.html', title="Categories", categories=mongo.db.categories.find())
@@ -77,6 +84,7 @@ def insert_cat():
     categories.insert_one(category_doc)
     return redirect(url_for('cat'))
 
+ """ Server Setup """
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

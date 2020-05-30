@@ -84,7 +84,7 @@ def insert_cat():
     categories.insert_one(category_doc)
     return redirect(url_for('cat'))
 
- """ Server Setup """
-    
+""" Server Setup """
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

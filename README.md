@@ -1,8 +1,8 @@
 #######################################################
 
-Version Control
+<h3>>Version Control</h3
 
-This Project uses Semantic Versioning (https://semver.org/)
+<h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
 -->0.2.2 -- README.md file beautified
 

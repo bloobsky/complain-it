@@ -1,6 +1,8 @@
 """ App.py application for Complain It
 version 0.2 OpenSource 
-by Mateusz Jakusz """
+repository available @
+https://www.github.com/bloobsky/complain-it
+by Mateusz Jakusz, 2020 """
 
 import os
 from os import path
@@ -23,15 +25,6 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     return render_template("index.html", title="Home")
-
-@app.route('/search_for')
-def search_for():
-    return render_template('search_for.html', title="Search for complained jobs", complains=mongo.db.complains.find())
-
-@app.route('/complain')
-def complain():
-    return render_template('complain.html', title="Complain a job", 
-    categories=mongo.db.categories.find())
 
 @app.route('/works')
 def works():
@@ -108,6 +101,15 @@ def add_job():
 @app.route('/file/<filename>')
 def file(filename):
     return mongo.send_file(filename)
+
+@app.route('/search_for')
+def search_for():
+    return render_template('search_for.html', title="Search for complained jobs", complains=mongo.db.complains.find())
+
+@app.route('/complain')
+def complain():
+    return render_template('complain.html', title="Complain a job", 
+    categories=mongo.db.categories.find())
 
 """ Server Setup """
 

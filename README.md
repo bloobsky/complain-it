@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.2.1 -- Documentation included in README.md
 
 -->0.2 <strong>[STABLE]</strong> -- Stable version of Complain It with all the functions working. 
 
@@ -124,9 +125,49 @@ Project Info
 
 Complain It is a fully functional web apllication that allows user to add information about recent job done by a trademan in order to approve or complain it so other user can take advantage of their experience and may decide whetever to do with their house project.
 
+Complain a local tradesman if the job he/she did is not good enough, so other people can rely on your experience and they can avoid unnecessary hustle.
+
+We are a non-profit organisation that helps people with selecting proper tradesman for a certain job. It allows user to see other job whenever they are good or bad. Our application will always be for FREE.
+
 UX
 
+Page is divided into 6 anchor points that are available from navigation menu located at the top of the page. Also there is 3 anchor point that are located in the footer sections
+TOP:
+
+Home -- Homepage it show the general information about project
+
+How it works -- Show how the proposed project works
+
+Search for complained job -- Ability to check the database for posts that were uploaded to the website.
+
+Complain a job -- Ability to publish some information about job.
+
+Categories -- fully functional menu that allows to add/modify or delete existing categories.
+
+FAQ - Frequently Asked Questions
+
+FOOTER:
+
+Privacy Policy -- Information how your data is used by our company
+
+Contact Us -- Ability to send an email to our office using emailJS component
+
+Directions -- How to approach our office using Google Maps API
+
+
+
+
 As a homeowner, I want to look for a jobs done by tradesman in order to proceed with mine.
+
+As a contractor, I want to search for bad jobs in order to look for a good tradesman.
+
+As a DIY guy, I want to look for inspirations using the application provided.
+
+As a housewife, I often looking for refurbishments and the application can show me which tradesman NOT to hire.
+
+As a man, I often would like to see other handyman job, especially if they were executed badly.
+
+As a enterpreneur I would like my handymans deliver good job, so their job would not be presented on that website.
 
 
 Testing
@@ -160,20 +201,24 @@ Message should appear 'Your site is ready to be published at https://$YourLogin.
 Your website is deployed now.
 
 Technologies,Programming Languages and APIs
-HTML5, CSS, Materialize, JavaScript, jQuery, Python, Flask, MongoDB, GoogleFonts
-API: emailJS, reCaptcha and Google Maps API
+HTML5, CSS, Materialize, JavaScript, jQuery, Python, Flask with (PyMongo, dnspython), MongoDB, GoogleFonts
+API: emailJS and Google Maps API
 
 Features to be implemented
+Ability to edit an already posted job. 
+Login possibilities in further use of website.
+Form checkup in jQuery in order not to publish empty fields. 
 
 
 Media
 
-Swatch used for website is available at /img/swatch.png
+Screenshots for testing were done by using SnippingTool @ MS Windows
 ComplainIt logo was created in Adobe Illustrator.
+Icons used in Project are part of Materialize (www.materialize.com)
 
 Acknowledgements
 
 I received inspiration from CodeInstitute (www.codeinstitute.net)
 Privacy Policy was generated using www.iubenda.com
-Coolors.co - website was used to generate colour scheme.
+MongoDB Atlas - for possibility to create a free database
 Gitpod was used to entirely written all the code for the proposed project.

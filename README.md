@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.1.11 -- Adjusted for proper displaying of new function
 -->0.1.10 -- Added function Delete in 'Complain for a job section'
 -->0.1.9 -- search_for.html update (removed unneccesary paragraph) 
 -->0.1.8 -- Added  'media queries' for photos uploaded to be presented differently on all devices

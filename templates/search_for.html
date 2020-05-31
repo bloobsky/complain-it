@@ -9,11 +9,11 @@
 
     
     <li>
-    <div class="col s3">
+    <div class="col s7">
     <strong>Uploaded by</strong> {{complain.uploaded_by}}<br>
     </div>
-    <div class="col s9">
-    <a href="{{url_for('delete_job', complain_id=complain._id)}}" class="waves-effect waves-light btn btn_small">Done</a>
+    <div class="col s5">
+    <a href="{{url_for('delete_job', complain_id=complain._id)}}" class="waves-effect waves-light btn btn_small red accent-4">Delete</a>
    </div>
    <br><br>
     <strong>Contractor name</strong> {{complain.job_name}}<br>

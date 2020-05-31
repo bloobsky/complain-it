@@ -1,6 +1,6 @@
 #######################################################
 
-<h3>>Version Control</h3
+<h3>>Version Control</h3>
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
@@ -123,7 +123,7 @@
 ->0.0.1 -- Initial Commit with README.md file
 
 
-#Project Info
+<h3>Project Info</h3>
 
 Complain It is a fully functional web apllication that allows user to add information about recent job done by a trademan in order to approve or complain it so other user can take advantage of their experience and may decide whetever to do with their house project.
 
@@ -131,10 +131,11 @@ Complain a local tradesman if the job he/she did is not good enough, so other pe
 
 We are a non-profit organisation that helps people with selecting proper tradesman for a certain job. It allows user to see other job whenever they are good or bad. Our application will always be for FREE.
 
-##UX
+<h3>UX</h3>
 
 Page is divided into 6 anchor points that are available from navigation menu located at the top of the page. Also there is 3 anchor point that are located in the footer sections
-###TOP:
+
+TOP:
 
 Home -- Homepage it show the general information about project
 
@@ -148,14 +149,13 @@ Categories -- fully functional menu that allows to add/modify or delete existing
 
 FAQ - Frequently Asked Questions
 
-###FOOTER:
+FOOTER:
 
 Privacy Policy -- Information how your data is used by our company
 
 Contact Us -- Ability to send an email to our office using emailJS component
 
 Directions -- How to approach our office using Google Maps API
-
 
 
 
@@ -172,12 +172,12 @@ As a man, I often would like to see other handyman job, especially if they were 
 As a enterpreneur I would like my handymans deliver good job, so their job would not be presented on that website.
 
 
-##Testing
+<h3>Testing</h3>
 Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8+ EDGE). Website was also tested using Inspect function in Google Chrome
 HTML and CSS Validator were also used in place.
 
 
-##Deployement
+<h3>>Deployement</h3>
 Using Git Command Line to upload to a repository
 
 Type in terminal these commands:
@@ -188,11 +188,11 @@ git remote add origin https://github.com/bloobsky/your_repository_name.git to as
 git push -u origin master to upload files to the repository
 
 
-##Project is deployed @ GitHub.
+<h3>Project is deployed @ GitHub.</h3>
 Github was used in deployement process as it is integrated, simple and ther is no need to use additional services.
 It also containt Version Control and everything is uploaded using terminal commands (git)
 
-###How it is done ?
+<h3>How it is done ?</h3>
 
 Open www.github.com.
 Login with your credentials
@@ -202,12 +202,12 @@ Under the source section select 'master branch' option
 Message should appear 'Your site is ready to be published at https://$YourLogin.github.io/$RepositoryName/
 Your website is deployed now.
 
-##Technologies,Programming Languages and APIs
+<h3>Technologies,Programming Languages and APIs</h3>
 
 HTML5, CSS, Materialize, JavaScript, jQuery, Python, Flask with (PyMongo, dnspython), MongoDB, GoogleFonts
 API: emailJS and Google Maps API
 
-##Features to be implemented
+<h3>Features to be implemented</h3>
 
 
 Ability to edit an already posted job. 
@@ -215,13 +215,13 @@ Login possibilities in further use of website.
 Form checkup in jQuery in order not to publish empty fields. 
 
 
-##Media
+<h3>Media</h3>
 
 Screenshots for testing were done by using SnippingTool @ MS Windows
 ComplainIt logo was created in Adobe Illustrator.
 Icons used in Project are part of Materialize (www.materialize.com)
 
-##Acknowledgements
+<h3>Acknowledgements</h3>
 
 I received inspiration from CodeInstitute (www.codeinstitute.net)
 Privacy Policy was generated using www.iubenda.com

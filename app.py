@@ -116,33 +116,6 @@ def delete_job(complain_id):
     mongo.db.complains.remove({'_id': ObjectId(complain_id)})
     return redirect(url_for('search_for'))
 
-@app.route('/edit_job/<complains_id>')
-def edit_job(complains_id):
-    the_job =  mongo.db.complains.find_one({"_id": ObjectId(complains_id)})
-    all_categories =  mongo.db.categories.find()
-    return render_template('edit_job.html', complains=the_job,
-                           categories=all_categories, title="Edit Job")
-
-"""
-@app.route('/update_job/<complains_id>', methods=["POST"])
-def update_job(complains_id):
-    complains = mongo.db.complains
-    if 'photo_name' in request.files:
-        photo_name = request.files['photo_name']
-        mongo.save_file(photo_name.filename, photo_name) 
-    complains.update( {'_id': ObjectId(complains_id)},
-    {
-    'category_name': request.form.get('category_name'), 
-    'uploaded_by': request.form.get('your_name'),
-    'job_name': request.form.get('job_name'),
-    'job_description': request.form.get('job_description'),
-    'county': request.form.get('county'),
-    'value': request.form.get('value'),
-    'photo_job_name':  photo_name.filename
-     })     
-    return redirect(url_for('search_for'))
-    """
-""" Server Setup """
-
+""" Server Setup """ 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

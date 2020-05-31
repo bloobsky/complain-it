@@ -34,6 +34,12 @@ nav i.material-icons,
     height: 100px;
 }
 
+/* photos */
+
+.photo {
+    width: 1280px;
+    height: 860px;
+}
 
 /* media queries */
 
@@ -41,6 +47,24 @@ nav i.material-icons,
     #glogo {
     width: 260px;
     height: 100px;
+
+
+}
+}
+
+@media (max-width: 568px) {
+    .photo{
+    width: 640px;
+    height: 480px;
+
+
+}
+}
+
+@media (max-width: 368px) {
+    .photo{
+    width: 320px;
+    height: 240px;
 
 
 }

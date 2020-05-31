@@ -4,6 +4,7 @@ Version Control
 
 This Project uses Semantic Versioning (https://semver.org/)
 
+-->0.1.8 -- Added  'media queries' for photos uploaded to be presented differently on all devices
 -->0.1.7 -- App.py beautified and removed unneccesary code
 -->0.1.6 -- Removed duplicate 'viewport' in base.html
 -->0.1.5 -- Added EuroSymbol€ next to the 'value' form

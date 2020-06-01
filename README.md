@@ -4,7 +4,10 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
--->0.2.11 -- Remaining screenshot
+-->0.2.12 -- Added heroku deployment in README.md file
+
+-->0.2.11 -- Remaining screenshot added
+
 -->0.2.10 -- Added more testing write-ups
 
 -->0.2.9 -- Added category name to be visible in 'Search for complained jobs' subpage
@@ -217,20 +220,32 @@ After clicking the category is no longer visible as on attached Screenshots<br>
 <img src="static/img/s7.JPG"><br><br>
 
 5)Both forms will no longer be available to send/publish without all fields presented. If you skip one or another field the system would give you an error message before submitting<br>
-<img src="static/img/s9.JPG"><br><br>
-<h3>>Deployement</h3>
+<img src="static/img/s.JPG"><br><br>
+<h3>Deployement</h3>
 Using Git Command Line to upload to a repository
 
 Type in terminal these commands:<br>
 <code>
-git init to initialize a new repository
-git add README.md to add README.md file to repository
-git commit -m "Initial commit" to add a message for first commitement.
-git remote add origin https://github.com/bloobsky/your_repository_name.git to assign repository
-git push -u origin master to upload files to the repository
+git init to initialize a new repository<br>
+git add README.md to add README.md file to repository<br>
+git commit -m "Initial commit" to add a message for first commitement<br>.
+git remote add origin https://github.com/bloobsky/your_repository_name.git to assign repository<br>
+git push -u origin master to upload files to the repository<br>
 </code>
+<br>
 
-<h3>Project is deployed @ GitHub.</h3>
+For heroku development type in terminal these commands<br>
+<code>
+heroku login "then entry your login and password"<br>
+pip3 freeze --local > requirements.txt "these is essential for heroku to word"<br>
+create a Procfile with "web: python app.py"<br>
+heroku git:clone -a [repository_name]<br>
+git push heroku master<br></code>
+<br>
+Your website is available now @ www.repository_name.herokuapp.com<br>
+
+
+<h3>Project is deployed @ GitHub and Heroku</h3>
 Github was used in deployement process as it is integrated, simple and ther is no need to use additional services.
 It also containt Version Control and everything is uploaded using terminal commands (git)
 
@@ -252,9 +267,8 @@ API: emailJS and Google Maps API
 <h3>Features to be implemented</h3>
 
 
-Ability to edit an already posted job. 
-Login possibilities in further use of website.
-Form checkup in jQuery in order not to publish empty fields. 
+Ability to edit previously  posted jobs. At the moment we have only 'DELETE' option.<br>
+Login / Signup possibilities in order to expand a 'project' for fully functional website that would help people at some stage<br>
 
 
 <h3>Media</h3>

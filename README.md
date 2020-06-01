@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.9 -- Added category name to be visible in 'Search for complained jobs' subpage
+
 -->0.2.8 -- Complain a job upload will not longer accept files other than images
 
 -->0.2.7 -- Added required fields in Complain a job form

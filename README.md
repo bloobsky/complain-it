@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.7 -- Added required fields in Complain a job form
+
 -->0.2.6 -- Added 'required' attribute in Contact Us Form
 
 -->0.2.5 -- Added testing write-up in README.md file

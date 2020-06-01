@@ -7,7 +7,7 @@
 <div class="row center">
     <form action="{{url_for('add_job') }}" method="POST"  class="col s12" enctype="multipart/form-data">
                 <div class="input-field col s12">
-                    <select id="category" name="category_name">
+                    <select id="category" name="category_name" required>
                   <option value="" disabled selected>Choose Category</option>
                   {% for cat in categories %}
                       <option value="{{cat.category_name}}">{{cat.category_name}}</option>
@@ -19,29 +19,29 @@
 
             <div class="input-field col s12">
                 <i class="material-icons prefix">fingerprint</i>
-                <input id="your_name" name="your_name" type="text">
+                <input id="your_name" name="your_name" type="text" required>
                 <label for="icon_prefix">Your Name</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">build</i>
-                <input id="job_name" name="job_name" type="text">
+                <input id="job_name" name="job_name" type="text" required>
                 <label for="icon_prefix">Contractor / Tradesman name</label>
             </div>
             
             <div class="input-field col s12">
                 <i class="material-icons prefix">attach_money</i>
-                <input id="value" name="value" type="text">
+                <input id="value" name="value" type="text" required>
                 <label for="icon_prefix">Value of job</label>
             </div>
         
             <div class="input-field col s12">
                 <i class="material-icons prefix">import_contacts</i>
-                <textarea name="job_description" id="job_description" class="materialize-textarea"></textarea>
+                <textarea name="job_description" id="job_description" class="materialize-textarea" required></textarea>
                 <label for="icon_telephone">Job Description</label>
             </div>
         
         <div class="input-field col s12">
-            <select name="county"> 
+            <select name="county" required> 
 	<option value="" disabled selected>Select County</option> 
 	 <option value="Antrim"  >Antrim</option> 
 	 <option value="Armagh"  >Armagh</option> 
@@ -83,7 +83,7 @@
             <div class="input-field file-field col s12">
                 <div class="btn center lime darken-2">
                 <span>Upload Photo</span>
-                <input id="photo_name" name="photo_name" type="file">
+                <input id="photo_name" name="photo_name" type="file" required>
                 </div>
                 <div class="file-path-wrapper">
         <input class="file-path validate" type="text">

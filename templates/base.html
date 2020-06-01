@@ -2,76 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>{{ title }} - Complain It !</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>{{ title }} - Complain It !</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="{{url_for('static', filename='css/materialize.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="{{url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/materialize.min.css')}}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{{url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen" />
 
 </head>
 
 <body>
-  <!-- navbar -->
-  <div class="navbar-fixed">
-  <nav class="lime">
-  <div class="nav-wrapper container">
-    <a href="{{url_for('index')}}" class="brand-logo right"><img src="{{url_for('static', filename='img/Logo.png')}}" id="glogo" alt="logo"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <!-- navbar -->
+    <div class="navbar-fixed">
+        <nav class="lime">
+            <div class="nav-wrapper container">
+                <a href="{{url_for('index')}}" class="brand-logo right"><img src="{{url_for('static', filename='img/Logo.png')}}" id="glogo" alt="logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-    <ul class="left hide-on-med-and-down">
-    <li><a href="{{url_for('index')}}">Home</a></li>
-      <li><a href="{{url_for('works')}}">How it works ?</a></li>
-          <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
-          <li><a href="{{url_for('complain')}}">Complain a job</a></li>
-          <li><a href="{{url_for('cat')}}">Categories</a></li>
-          <li><a href="{{url_for('faq')}}">FAQ</a></li>
-  </div>
-</nav>
-</div>
-  
-  <ul class="sidenav" id="mobile-demo">
-          <li><a href="{{url_for('index')}}">Home</a></li>
-          <li><a href="{{url_for('works')}}">How it works ?</a></li>
-          <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
-          <li><a href="{{url_for('complain')}}">Complain a job</a></li>
-          <li><a href="{{url_for('cat')}}">Categories</a></li>
-          <li><a href="{{url_for('faq')}}">FAQ</a></li>
-  </ul>
-
-  {% block content %}
-  {% endblock %}
-
-  <!-- footer -->
-  <footer class="page-footer lime darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Our Target</h5>
-          <p class="grey-text text-lighten-4">We are a non-profit organisation that helps people with selecting proper tradesman for a certain job. It allows user to see other job whenever they are good or bad. Our application will always be for <strong>FREE</strong>. </p>
-
-
-        </div>
-        <div class="col l2 s12">
-          <h5 class="white-text">Complain It</h5>
-          <ul>
-            <li><a class="white-text" href="{{url_for('privacy')}}">Privacy Policy</a></li>
-            <li><a class="white-text" href="{{url_for('contact')}}">Contact us</a></li>
-            <li><a class="white-text" href="{{url_for('directions')}}">Directions</a></li>
-          </ul>
-        </div>
-
-      </div>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('works')}}">How it works ?</a></li>
+                    <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
+                    <li><a href="{{url_for('complain')}}">Complain a job</a></li>
+                    <li><a href="{{url_for('cat')}}">Categories</a></li>
+                    <li><a href="{{url_for('faq')}}">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <!-- copyright -->
-    <div class="footer-copyright">
-      <div class="container footer-anchor">
-      Copyright 2020 by <a href="http://www.jakusz.org/" target="_blank">Mateusz Jakusz</a>
-      </div>
-    </div>
-  </footer>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        <li><a href="{{url_for('works')}}">How it works ?</a></li>
+        <li><a href="{{url_for('search_for')}}">Search for complained job</a></li>
+        <li><a href="{{url_for('complain')}}">Complain a job</a></li>
+        <li><a href="{{url_for('cat')}}">Categories</a></li>
+        <li><a href="{{url_for('faq')}}">FAQ</a></li>
+    </ul>
+
+    {% block content %} {% endblock %}
+
+    <!-- footer -->
+    <footer class="page-footer lime darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Our Target</h5>
+                    <p class="grey-text text-lighten-4">We are a non-profit organisation that helps people with selecting proper tradesman for a certain job. It allows user to see other job whenever they are good or bad. Our application will always be for <strong>FREE</strong>. </p>
+
+
+                </div>
+                <div class="col l2 s12">
+                    <h5 class="white-text">Complain It</h5>
+                    <ul>
+                        <li><a class="white-text" href="{{url_for('privacy')}}">Privacy Policy</a></li>
+                        <li><a class="white-text" href="{{url_for('contact')}}">Contact us</a></li>
+                        <li><a class="white-text" href="{{url_for('directions')}}">Directions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="footer-copyright">
+            <div class="container footer-anchor">
+                Copyright 2020 by <a href="http://www.jakusz.org/" target="_blank">Mateusz Jakusz</a>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -82,11 +82,11 @@
     <script src="{{url_for('static', filename='js/init.js')}}"></script>
     <script src="{{url_for('static', filename='js/map.js')}}"></script>
     <script src="{{url_for('static', filename='js/collapsible.js')}}"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-   (function(){
-      emailjs.init("user_6KZjWKGFdaIANLT0wU2Zf");
-   })();
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("user_6KZjWKGFdaIANLT0wU2Zf");
+        })();
     </script>
     <script src="{{url_for('static', filename='js/sendMail.js')}}"></script>
 

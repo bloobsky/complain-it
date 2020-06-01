@@ -1,5 +1,8 @@
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.15a -- base.html & style.css validated.
+
+
 -->0.2.14 -- Version control moved to VERSION.md file
 
 -->0.2.13 -- Stylised code in README.md file

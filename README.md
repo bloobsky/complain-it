@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.8 -- Complain a job upload will not longer accept files other than images
+
 -->0.2.7 -- Added required fields in Complain a job form
 
 -->0.2.6 -- Added 'required' attribute in Contact Us Form

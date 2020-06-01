@@ -1,6 +1,10 @@
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
--->0.3 -- First stable version of Complain It - web application<strong>[STABLE]</strong>
+-->0.3.2 -- Debug set to False in app.py for heroku development
+
+-->0.3.1 -- Fixed contact.html for validation
+
+-->0.3 -- <strong>[STABLE]</strong> First stable version of Complain It - web application
 
 -->0.2.15c -- contact.html validated
 

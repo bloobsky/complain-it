@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.10 -- Added more testing write-ups
+
 -->0.2.9 -- Added category name to be visible in 'Search for complained jobs' subpage
 
 -->0.2.8 -- Complain a job upload will not longer accept files other than images
@@ -22,7 +24,7 @@
 
 -->0.2.1 -- Documentation included in README.md
 
--->0.2 <strong>[STABLE]</strong> -- Stable version of Complain It with all the functions working. 
+-->0.2 <strong>[BETA]</strong> -- Stable version of Complain It with all the functions working. 
 
 -->0.1.13 -- Changed label for job description
 
@@ -50,7 +52,7 @@
 
 -->0.1.1 -- Added Value field in complain a job subpage
 
--->0.1 <strong>[STABLE]</strong> -- All functionalities working now perfectly 
+-->0.1 <strong>[ALPHA]</strong> -- All functionalities working now perfectly 
 
 ->0.0.42 -- Photos can be uploaded now to MongoDB
 
@@ -212,6 +214,9 @@ After clicking the category is no longer visible as on attached Screenshots<br>
 4)To edit category click on EDIT button next to category name. For purpose of this test we will change the name from Test to TESTNUMBER2
 <img src="static/img/s6.JPG"><br><br>
 <img src="static/img/s7.JPG"><br><br>
+
+5)Both forms will no longer be available to send/publish without all fields presented. If you skip one or another field the system would give you an error message before submitting<br>
+<img src="static/img/s9.JPG"><br><br>
 <h3>>Deployement</h3>
 Using Git Command Line to upload to a repository
 

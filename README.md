@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.4 -- Added testing write-up in README.md file
+
 -->0.2.4 -- Added Datetime stamp in 'Complain a job form'
 
 -->0.2.3 -- Button stylised in editcat.html
@@ -180,17 +182,39 @@ As a enterpreneur I would like my handymans deliver good job, so their job would
 Website was tested using 3 devices: Desktop PC, Tablet (Samsung a300) and smartphone (Samsung s8+ EDGE). Website was also tested using Inspect function in Google Chrome
 HTML and CSS Validator were also used in place.
 
+<h3>Testing write-up</h3>
 
+1) Contact form tests (email validation)
+
+When you try to enter invalid email (one without @sign) it would present you the error.
+<img src="static/img/s1.jpeg"><BR>
+
+2) Too add new category just go Categories fromt top menu and click enter "Add new category" the form should appear. For purpose in the test we add "TEST" category.
+<img src="static/img/s2.jpeg"><br>
+
+As a result we have a new category called test
+<img src="static/img/s3.jpeg"><br>
+
+<br>
+3) To remove a category just click 'DELETE' button next to category name.<br>
+<img src="static/img/s4.jpeg">
+After clicking the category is no longer visible as on attached Screenshots<br>
+<img src="static/img/s5.jpeg">
+
+4)To edit category click on EDIT button next to category name. For purpose of this test we will change the name from Test to TESTNUMBER2
+<img src="static/img/s6.jpeg"><br><br>
+<img src="static/img/s7.jpeg"><br><br>
 <h3>>Deployement</h3>
 Using Git Command Line to upload to a repository
 
 Type in terminal these commands:
+<code>
 git init to initialize a new repository
 git add README.md to add README.md file to repository
 git commit -m "Initial commit" to add a message for first commitement.
 git remote add origin https://github.com/bloobsky/your_repository_name.git to assign repository
 git push -u origin master to upload files to the repository
-
+</code>
 
 <h3>Project is deployed @ GitHub.</h3>
 Github was used in deployement process as it is integrated, simple and ther is no need to use additional services.

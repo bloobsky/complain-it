@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.4 -- Added Datetime stamp in 'Complain a job form'
+
 -->0.2.3 -- Button stylised in editcat.html
 
 -->0.2.2 -- README.md file beautified

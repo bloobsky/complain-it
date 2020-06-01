@@ -9,6 +9,7 @@ from os import path
 from flask import Flask, render_template, url_for, redirect, request
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+import datetime
 if path.exists("env.py"):
     import env 
 
@@ -94,9 +95,11 @@ def add_job():
         'job_description': request.form.get('job_description'),
         'county': request.form.get('county'),
         'value': request.form.get('value'),
+        'dateandtime': datetime.datetime.utcnow(),
         'photo_job_name':  photo_name.filename })     
-    
-    return redirect(url_for('search_for'))
+        return redirect(url_for('search_for'))
+    else:
+        return redirect(url_for('complain'))
 
 @app.route('/file/<filename>')
 def file(filename):

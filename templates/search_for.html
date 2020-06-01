@@ -1,28 +1,27 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <br><br>
 <!-- content-->
 <div class="container">
-<div class="row center">
-<ul>
-{% for complain in complains %}
+    <div class="row center">
+        <ul>
+            {% for complain in complains %}
 
-    
-    <li>
-    <strong>Uploaded by</strong> {{complain.uploaded_by}}<br>
-    <strong>Category name</strong> {{complain.category_name}}<br>
-    <strong>Contractor name</strong> {{complain.job_name}}<br>
-    <strong>Job description</strong> {{complain.job_description}}<br>
-    <strong>County</strong> {{complain.county}}<br>
-    <strong>Date and time</strong> {{complain.dateandtime}}<br>
-    <strong>Value</strong> {{complain.value}}€<br><br>
-    <a href="{{url_for('delete_job', complain_id=complain._id)}}" class="waves-effect waves-light btn btn_tiny red accent-4">Delete</a><br><br>
-    <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.photo_job_name}}" class="photo">
-    
-    <br><br><br><br>
-    </li>
-    {% endfor %}
-</ul>
-</div>
+
+            <li>
+                <strong>Uploaded by</strong> {{complain.uploaded_by}}<br>
+                <strong>Category name</strong> {{complain.category_name}}<br>
+                <strong>Contractor name</strong> {{complain.job_name}}<br>
+                <strong>Job description</strong> {{complain.job_description}}<br>
+                <strong>County</strong> {{complain.county}}<br>
+                <strong>Date and time</strong> {{complain.dateandtime}}<br>
+                <strong>Value</strong> {{complain.value}}€<br><br>
+                <a href="{{url_for('delete_job', complain_id=complain._id)}}" class="waves-effect waves-light btn btn_tiny red accent-4">Delete</a><br><br>
+                <img src="{{url_for('file', filename=complain.photo_job_name)}}" alt="{{complain.photo_job_name}}" class="photo">
+
+                <br><br><br><br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 {% endblock %}

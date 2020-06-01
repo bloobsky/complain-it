@@ -1,11 +1,12 @@
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.3 -- First stable version of Complain It - web application<strong>[STABLE]</strong>
+
 -->0.2.15c -- contact.html validated
 
 -->0.2.15b -- complain.html validated
 
 -->0.2.15a -- base.html & style.css validated.
-
 
 -->0.2.14 -- Version control moved to VERSION.md file
 

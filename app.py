@@ -1,5 +1,5 @@
 """ App.py application for Complain It
-version 0.2 OpenSource 
+version 0.3 OpenSource 
 repository available @
 https://www.github.com/bloobsky/complain-it
 by Mateusz Jakusz, 2020 """

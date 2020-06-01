@@ -54,8 +54,8 @@ nav i.material-icons,
 
 @media (max-width: 568px) {
     .photo{
-    width: 640px;
-    height: 480px;
+    width: 560px;
+    height: 420px;
 
 
 }
@@ -63,8 +63,8 @@ nav i.material-icons,
 
 @media (max-width: 368px) {
     .photo{
-    width: 320px;
-    height: 240px;
+    width: 280px;
+    height: 200px;
 
 
 }

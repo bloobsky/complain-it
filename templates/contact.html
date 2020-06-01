@@ -9,12 +9,12 @@
       <div class="row">
         <div class="input-field col s12 l6 m6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" name="from_name" type="text" class="validate">
+          <input id="icon_prefix" name="from_name" type="text" class="validate" required>
           <label for="icon_prefix">First Name</label>
         </div>
         <div class="input-field col s12 l6 m6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" name="tel_number" class="validate">
+          <input id="icon_telephone" type="tel" name="tel_number" class="validate" required>
           <label for="icon_telephone">Telephone</label>
         </div>
       </div>
@@ -22,12 +22,12 @@
       <div class="row">
       <div class="input-field col s12 l6 m6">
       <i class="material-icons prefix">group</i>
-          <input id="last_name" type="text" name="from_lastname" class="validate">
+          <input id="last_name" type="text" name="from_lastname" class="validate" required>
           <label for="last_name">Last Name</label>
         </div>
         <div class="input-field col s12 l6 m6">
         <i class="material-icons prefix">email</i>
-          <input id="email" type="email" name="from_email" class="validate">
+          <input id="email" type="email" name="from_email" class="validate" required>
           <label for="email">Email</label>
           <span class="helper-text" data-error="wrong" data-success="right">Valid email contains '@'</span>
         </div>
@@ -35,7 +35,7 @@
       <div class="row">
       <div class="input-field col s12">
       <i class="material-icons prefix">message</i>
-          <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+          <textarea id="textarea1" name="message" class="materialize-textarea" required></textarea>
           <label for="textarea1">Your message</label>
         </div>
       </div>

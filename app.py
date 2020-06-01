@@ -107,7 +107,7 @@ def file(filename):
 
 @app.route('/search_for')
 def search_for():
-    return render_template('search_for.html', title="Search for complained jobs", complains=mongo.db.complains.find(), )
+    return render_template('search_for.html', title="Search for complained jobs", complains=mongo.db.complains.find())
 
 @app.route('/complain')
 def complain():

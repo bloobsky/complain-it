@@ -4,6 +4,7 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.11 -- Remaining screenshot
 -->0.2.10 -- Added more testing write-ups
 
 -->0.2.9 -- Added category name to be visible in 'Search for complained jobs' subpage
@@ -220,7 +221,7 @@ After clicking the category is no longer visible as on attached Screenshots<br>
 <h3>>Deployement</h3>
 Using Git Command Line to upload to a repository
 
-Type in terminal these commands:
+Type in terminal these commands:<br>
 <code>
 git init to initialize a new repository
 git add README.md to add README.md file to repository

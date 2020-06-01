@@ -52,7 +52,7 @@ nav i.material-icons,
 }
 }
 
-@media (max-width: 1360px) and ( min-width: 481px) {
+@media (max-width: 1460px) and ( min-width: 481px) {
     .photo{
     width: 520px;
     height: 380px;

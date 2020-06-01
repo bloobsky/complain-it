@@ -4,6 +4,8 @@
 
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.2.13 -- Stylised code in README.md file
+
 -->0.2.12 -- Added heroku deployment in README.md file
 
 -->0.2.11 -- Remaining screenshot added
@@ -225,22 +227,20 @@ After clicking the category is no longer visible as on attached Screenshots<br>
 Using Git Command Line to upload to a repository
 
 Type in terminal these commands:<br>
-<code>
-git init to initialize a new repository<br>
-git add README.md to add README.md file to repository<br>
-git commit -m "Initial commit" to add a message for first commitement<br>.
-git remote add origin https://github.com/bloobsky/your_repository_name.git to assign repository<br>
-git push -u origin master to upload files to the repository<br>
-</code>
+<code>git init</code> to initialize a new repository<br>
+<code>git add README.md</code> to add README.md file to repository<br>
+<code>git commit -m "Initial commit"</code> to add a message for first commitement<br>.
+<code>git remote add origin https://github.com/bloobsky/your_repository_name.git</code> to assign repository<br>
+<code>git push -u origin master</code> to upload files to the repository<br>
 <br>
 
 For heroku development type in terminal these commands<br>
-<code>
-heroku login "then entry your login and password"<br>
-pip3 freeze --local > requirements.txt "these is essential for heroku to word"<br>
-create a Procfile with "web: python app.py"<br>
-heroku git:clone -a [repository_name]<br>
-git push heroku master<br></code>
+
+<code>heroku login</code> "then entry your login and password"<br>
+<code>pip3 freeze --local > requirements.txt </code>"these is essential for heroku to word"<br>
+<code>echo web: python app.py > Procfile</code>create a Procfile with "web: python app.py"<br>
+<code>heroku git:clone -a [repository_name]</code><br>
+<code>git push heroku master</code><br>
 <br>
 Your website is available now @ www.repository_name.herokuapp.com<br>
 

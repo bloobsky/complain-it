@@ -102,7 +102,7 @@ For heroku development type in terminal these commands<br>
 <code>heroku git:clone -a [repository_name]</code><br>
 <code>git push heroku master</code><br>
 <br>
-Your website is available now @ www.repository_name.herokuapp.com<br>
+Your website is available now @ https://repository_name.herokuapp.com<br>
 
 
 <h3>Project is deployed @ GitHub and Heroku</h3>

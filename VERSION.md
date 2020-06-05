@@ -1,5 +1,7 @@
 <h5>>This Project uses Semantic Versioning (https://semver.org/)</h5>
 
+-->0.3.5 -- Changed info about Heroku deployment
+
 -->0.3.4 -- Fixed another issue with pictures to be displayed properly on smaller devices
 
 -->0.3.3 -- Fixed images to be displayed properly on smaller devices
